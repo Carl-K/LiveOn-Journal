@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Hashed Password</th>
+  </tr>
+  <% @user_identifications.each do |user_identification| %>
+  <tr>
+    <td><%= user_identification.username %></td>
+    <td><%= user_identification.password_digest %></td>
+    <td>
+      <%= link_to("Show", user_identification_path(user_identification.username)) %>
+      <%= link_to("Edit", edit_user_identification_path(user_identification.username)) %>
+      <%= link_to("Delete", delete_user_identification_path(user_identification.username)) %>
+    </td>
+  </tr>
+  <% end %>
+</table>

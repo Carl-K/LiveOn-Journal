@@ -1,0 +1,15 @@
+<%= form_tag(attempt_sign_in_path) do %>
+<table class="Center_Content">
+  <tr>
+    <th><%= label_tag(:username) %></th>
+    <td><%= text_field_tag(:username) %></td>
+  </tr>
+  <tr>
+    <th><%= label_tag(:password) %></th>
+    <td><%= password_field_tag(:password) %></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Center_Text"><%= submit_tag("Log In") %></td>
+  </tr>
+</table>
+<% end %>

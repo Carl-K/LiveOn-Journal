@@ -1,0 +1,19 @@
+<%= form_for(@user_identification) do |f| %>
+<table class="Center_Content">
+  <tr>
+    <th><%= f.label(:current_password, "Current password") %></th>
+    <td><%= f.password_field(:current_password) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:password) %></th>
+    <td><%= f.password_field(:password) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:password_confirmation) %></th>
+    <td><%= f.password_field(:password_confirmation) %></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="Center_Text"><%= f.submit("Update User") %></td>
+  </tr>
+</table>
+<% end %>

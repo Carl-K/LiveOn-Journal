@@ -1,0 +1,10 @@
+<% if !flash[:notice].blank? %>
+<table class="Notice">
+  <% flash[:notice].each do |notice| %>
+    <tr>
+      <td><p><%= notice %></p></td>
+    </tr>
+  <% end %>
+</table>
+<br />
+<% end %>

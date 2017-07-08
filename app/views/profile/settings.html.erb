@@ -1,0 +1,8 @@
+<table class="Menu">
+  <tr>
+    <td class="Menu_Item No_Underline Lavender"><%= link_to('Change Password', edit_user_identification_path( session[:username] )) %></td>
+  </tr>
+  <tr>
+    <td class="Menu_Item No_Underline Lavender"><%= link_to('Delete Account', delete_user_identification_path( session[:username] )) %></td>
+  </tr>
+</table>

@@ -1,0 +1,14 @@
+<%= form_for(@journal_entry) do |f| %>
+<table>
+  <tr>
+    <td><%= f.hidden_field(:entry_created_at, :value => Time.now) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:entry) %></th>
+    <td><%= f.text_area(:entry, size: "70x5") %></td>
+  </tr>
+  <tr>
+    <td><%= f.submit("Create New Entry") %></td>
+  </tr>
+</table>
+<% end %>

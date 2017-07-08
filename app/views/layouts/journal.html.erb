@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journal</title>
+    <%= stylesheet_link_tag("application") %>
+  </head>
+
+  <body>
+
+    <%= link_to(image_tag("journal_icon.png", class: "Journal_Image Top_Height"), root_path) %>
+    <h1 class="Top_Title Top_Height"><%= session[:username] %>'s Journal</h1>
+
+    <table class="Menu">
+      <tr>
+        <td class="Menu_Item No_Underline Lavender"><%= link_to("Explore Journal", journal_entries_path) %></td>
+        <td class="Menu_Item No_Underline Lavender"><%= link_to("Close Journal", home_path) %></td>
+        <td class="Menu_Item No_Underline Lavender"><%= link_to("Write New Entry", new_journal_entry_path) %></td>
+    </tr>
+    </table>
+
+    <%= render partial: 'layouts/notices' %>
+
+    <%= render partial: 'layouts/center_content' %>
+
+  </body>
+</html>

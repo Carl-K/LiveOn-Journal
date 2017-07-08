@@ -1,0 +1,16 @@
+<%= form_for(@user_identification, :method => 'delete') do |f| %>
+  <table>
+    <tr>
+      <td><p>Are you sure you want to permanently delete <%= @user_identification.username %>?</p></td>
+    </tr>
+    <tr>
+      <td><p><%= f.label(:current_password, "Confirm current password") %><p></td>
+    </tr>
+    <tr>
+      <td><%= f.password_field(:current_password) %></td>
+    </tr>
+    <tr>
+      <td><p><%= f.submit("Delete User") %></p></td>
+    </tr>
+  </table>
+<% end %>

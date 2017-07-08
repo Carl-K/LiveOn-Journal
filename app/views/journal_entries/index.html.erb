@@ -1,0 +1,13 @@
+<% if @journal_entries.count > 0 %>
+<table class="Recents">
+  <% @journal_entries.each do |journal_entry| %>
+  <tr>
+    <td><%= journal_entry.entry_created_at %></td>
+    <td><%= journal_entry.entry %></td>
+    <td><%= link_to("Delete", delete_journal_entry_path(:id => journal_entry.id)) %></td>
+  </tr>
+  <% end %>
+</table>
+<% else %>
+<p>No entries yet</p>
+<% end %>

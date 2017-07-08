@@ -1,0 +1,9 @@
+<h2><%=params[:username]%>'s Journal</h2>
+<table>
+  <% @their_entries.each do |journal_entry| %>
+  <tr>
+    <td><%= journal_entry.entry_created_at %></td>
+    <td><%= journal_entry.entry %></td>
+  </tr>
+  <% end %>
+</table>
