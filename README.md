@@ -1,9 +1,13 @@
 Database Tables:
 
 | Field           | Type         | Null | Key | Default |
+
 | username        | varchar(40)  | NO   | PRI | NULL    |
+
 | password_digest | varchar(255) | NO   |     | NULL    |
+
 | created_at      | datetime     | NO   |     | NULL    |
+
 | updated_at      | datetime     | NO   |     | NULL    |
 
 | Field                        | Type         | Null | Key | Default | Extra          |
