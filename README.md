@@ -1,24 +1,19 @@
-# README
+Database Tables:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
++-----------------+--------------+------+-----+---------+-------+
+| Field           | Type         | Null | Key | Default | Extra |
++-----------------+--------------+------+-----+---------+-------+
+| username        | varchar(40)  | NO   | PRI | NULL    |       |
+| password_digest | varchar(255) | NO   |     | NULL    |       |
+| created_at      | datetime     | NO   |     | NULL    |       |
+| updated_at      | datetime     | NO   |     | NULL    |       |
++-----------------+--------------+------+-----+---------+-------+
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
++------------------------------+--------------+------+-----+---------+----------------+
+| Field                        | Type         | Null | Key | Default | Extra          |
++------------------------------+--------------+------+-----+---------+----------------+
+| id                           | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+| user_identification_username | varchar(255) | NO   | MUL | NULL    |                |
+| entry_created_at             | datetime     | NO   |     | NULL    |                |
+| entry                        | text         | YES  |     | NULL    |                |
++------------------------------+--------------+------+-----+---------+----------------+
