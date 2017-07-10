@@ -12,6 +12,8 @@ user_identifications uses a string titled username as the primary key as opposed
 
 journal_entries references the user_identifications table through the foreign key user_identifiction_username.
 
+Tables:
+
 user_identifications:
 +-----------------+--------------+------+-----+---------+-------+
 | Field           | Type         | Null | Key | Default | Extra |
